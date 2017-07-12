@@ -9,8 +9,8 @@ void setup() {
 
 void loop() {
   int raw = analogRead(A5);
- float val = fmap(raw, 0, 1023, 0.0, 3.3);
- Serial.println(val*2);
+ float val = fmap(raw, 0, 1023, 0.0, 5.0);
+ Serial.println(val);
  delay(1000);
 }
 
